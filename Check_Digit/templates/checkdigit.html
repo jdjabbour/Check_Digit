@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Check Digit </title>
+</head>
+<body>
+<div class="container">
+    <h1>Please enter your withholding ID</h1>
+    <form action="{{url_for('checkdigit')}}" method="POST">
+        <input title="Please enter withholding ID" placeholder="Withholding ID" type="number" name="enter_id" required>
+        <br>
+        <button type="submit"> Submit </button>
+    </form>
+</div>
+</body>
+</html>

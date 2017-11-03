@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <h1>Please enter your withholding ID</h1>
+    <form action="{{url_for('index')}}" method="POST">
+        <input title="Please enter withholding ID" placeholder="Withholding ID" type="text" name="enter_id" required>
+        <br>
+        <button type="submit"> Submit </button>
+    </form>
+    <h1>Your output is: {{ variable }}</h1>
+</div>
+</body>
+</html>

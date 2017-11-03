@@ -4,6 +4,7 @@ import math
 
 
 
+
 counter = 0
 def BarCode(sui_id):
     #adds up the numbers id odd place holders
@@ -38,7 +39,7 @@ def WithholdingNumb(wh_id_numb):
     weight3 = weight1 + weight2
     weight4 = weight3%9
     WHcheckdig = 9-weight4
-    print WHcheckdig
+    print(WHcheckdig)
     return WHcheckdig
     
 
@@ -85,7 +86,7 @@ def Withholding(wh_id):
         result = x+(y*2)+(a*3)+(b*4)+(c*5)+(d*6)+(e*7)+(f*8)+(g*9)
         result2 = result%9
         wh_id = 9-result2
-        print wh_id
+        print(wh_id)
         return wh_id
 
 def suffix(suffix_id):
@@ -94,13 +95,14 @@ def suffix(suffix_id):
     numb3 = numb1 + numb2
     numb4 = numb3%9
     Suffixdig = 9-numb4
-    print Suffixdig
+    print(Suffixdig)
     return Suffixdig
 
+
 while counter != 999999:
-    number=raw_input("Please enter your number: ")
+    number=input("Please enter your number: ")
     if len(number) == 7:
-        quest = raw_input("Is this a barcode id? y/n ")
+        quest = input("Is this a barcode id? y/n ")
         if quest == "y" or quest == "Y":
             x = list(number)
             sui_id = map(int, x)
